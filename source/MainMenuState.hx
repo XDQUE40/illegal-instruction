@@ -200,7 +200,12 @@ class MainMenuState extends MusicBeatState
 		// NG.core.calls.event.logEvent('swag').send();
 
 		changeItem();
-		super.create();
+		
+			#if android		
+			addVirtualPad(UP_DOWN, A_B);		
+			#end	
+					
+				super.create();
 	}
 
 	var selectedSomethin:Bool = false;
