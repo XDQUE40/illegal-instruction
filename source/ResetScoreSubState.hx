@@ -67,7 +67,12 @@ class ResetScoreSubState extends MusicBeatSubstate
 		noText.screenCenter(X);
 		noText.x += 200;
 		add(noText);
-		updateOptions();
+		
+		#if android
+		addVirtualPad(LEFT_FULL, A_B);
+		#end	
+		
+			updateOptions();
 	}
 
 	override function update(elapsed:Float)
