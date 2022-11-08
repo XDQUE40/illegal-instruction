@@ -5705,7 +5705,7 @@ class PlayState extends MusicBeatState
 							iconP1.changeIcon('duo');
 
 						// shit for da uhhhhhhhhhhhhhhhhhhhhhhhh trails
-						case 2081, 2719, 2848:
+						
 							chaotixGlass(1);
 						case 2816, 2976:
 							revivedIsPissed(1);
@@ -5872,7 +5872,7 @@ class PlayState extends MusicBeatState
 						FlxTween.tween(FlxG.camera, {zoom: defaultCamZoom}, 0.7, {ease: FlxEase.cubeInOut});
 						FlxTween.tween(camHUD, {alpha: 1}, 1);
 						majinSaysFuck(1);
-					case 1040:
+					
 						wowZoomin = false;
 						holyFuckStopZoomin = true;
 						defaultCamZoom = 0.8;
