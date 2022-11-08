@@ -188,7 +188,11 @@ class StoryMenuState extends MusicBeatState
 		changeWeek();
 		changeDifficulty();
 
-		super.create();
+		#if android
+		addVirtualPad(LEFT_FULL, A_B);
+		#end	
+		
+			super.create();
 	}
 
 	override function closeSubState() {
