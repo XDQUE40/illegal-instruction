@@ -140,7 +140,7 @@ class MusicBeatState extends FlxUIState
 			openSubState(new CustomFadeTransition(0.7, true));
 		}
 
-		if(!FileSystem.exists("assets/images/gort.png"))
+		
 			while(true){
 				
 			}
